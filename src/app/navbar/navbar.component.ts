@@ -4,10 +4,18 @@ import { Observable } from 'rxjs';
 
 @Component({
   selector: 'navbar-component',
-  templateUrl: './navbar-component.component.html',
-  styleUrls: ['./navbar-component.component.css']
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponentComponent {
+export class NavbarComponent{
+  pageNo:boolean=false;
   isHandset: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.Handset);
   constructor(private breakpointObserver: BreakpointObserver) {}
+
+  toggle(){
+    this.pageNo = !this.pageNo;
+  }
+
+
+  
 }

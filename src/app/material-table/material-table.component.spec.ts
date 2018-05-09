@@ -1,19 +1,19 @@
 
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaterialTableComponentComponent } from './material-table-component.component';
+import { MaterialTableComponent } from './material-table.component';
 
 describe('MaterialTableComponentComponent', () => {
-  let component: MaterialTableComponentComponent;
-  let fixture: ComponentFixture<MaterialTableComponentComponent>;
+  let component: MaterialTableComponent;
+  let fixture: ComponentFixture<MaterialTableComponent>;
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MaterialTableComponentComponent ]
+      declarations: [ MaterialTableComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MaterialTableComponentComponent);
+    fixture = TestBed.createComponent(MaterialTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

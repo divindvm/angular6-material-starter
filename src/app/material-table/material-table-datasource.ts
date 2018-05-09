@@ -38,7 +38,7 @@ const EXAMPLE_DATA: MaterialTableComponentItem[] = [
  * encapsulate all logic for fetching and manipulating the displayed data
  * (including sorting, pagination, and filtering).
  */
-export class MaterialTableComponentDataSource extends DataSource<MaterialTableComponentItem> {
+export class MaterialTableDataSource extends DataSource<MaterialTableComponentItem> {
   data: MaterialTableComponentItem[] = EXAMPLE_DATA;
 
   constructor(private paginator: MatPaginator, private sort: MatSort) {
